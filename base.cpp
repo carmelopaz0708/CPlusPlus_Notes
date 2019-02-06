@@ -1,6 +1,6 @@
 /*
   base.cpp
-  A program that displays other base-N number systems used in computers.
+  A program that displays other base-N number systems used in computers. Base-N number systems can be display by using the designated     syntax.
 */
 
 #include <iostream>
