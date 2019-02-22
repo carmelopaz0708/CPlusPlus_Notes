@@ -13,14 +13,12 @@ double quo(double, double);
 void disp(double, double, double, double, double, double);
 
 int main() {
-    using namespace std;
-    
     double val1, val2, sum_val, dif_val, mul_val, quo_val;
-    cout << "Enter first variable: ";
-    cin >> val1;
-    cout << "Enter second variable: ";
-    cin >> val2;
-    cout << endl;
+    std::cout << "Enter first variable: ";
+    std::cin >> val1;
+    std::cout << "Enter second variable: ";
+    std::cin >> val2;
+    std::cout << std::endl;
     
     sum_val = sum(val1, val2);
     dif_val = dif(val1, val2);
@@ -51,10 +49,9 @@ double quo(double quo1, double quo2) {
 }
 
 void disp(double val1, double val2, double sum_val, double dif_val, double mul_val, double quo_val) {
-    using namespace std;
-    cout << val1 << " + " << val2 << " = " << sum_val << endl;
-    cout << val1 << " - " << val2 << " = " << dif_val << endl;
-    cout << val1 << " * " << val2 << " = " << mul_val << endl;
-    cout << val1 << " / " << val2 << " = " << quo_val << endl;
-    cout << endl;
+    std::cout << val1 << " + " << val2 << " = " << sum_val << std::endl;
+    std::cout << val1 << " - " << val2 << " = " << dif_val << std::endl;
+    std::cout << val1 << " * " << val2 << " = " << mul_val << std::endl;
+    std::cout << val1 << " / " << val2 << " = " << quo_val << std::endl;
+    std::cout << std::endl;
 }
