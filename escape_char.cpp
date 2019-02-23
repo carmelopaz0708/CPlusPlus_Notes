@@ -8,14 +8,12 @@
 #include<iostream>
 
 int main() {
-    using namespace std;
-    
     int code;
     
-    cout << "\tAI AUTHENTICATOR";
-    cout << "\n\aEnter Code:________\b\b\b\b\b\b\b\b";
-    cin >> code;
-    cout << "\n\nCode " << code << " is INCORRECT!!!!";
-    cout << "\n\nYour curiosity will mean the end for you, begone human!";
-    cout << "\nSSSSSSKKKKKKKKRRRRRRRRREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE";
+    std::cout << "\tAI AUTHENTICATOR";
+    std::cout << "\n\aEnter Code:________\b\b\b\b\b\b\b\b";
+    std::cin >> code;
+    std::cout << "\n\nCode " << code << " is INCORRECT!!!!";
+    std::cout << "\n\nYour curiosity will mean the end for you, begone human!";
+    std::cout << "\nSSSSSSKKKKKKKKRRRRRRRRREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE";
 }
