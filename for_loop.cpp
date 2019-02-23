@@ -7,7 +7,7 @@
 
 int main()
 {
-    for (int i = 0; i < 5; i++) {                               // Basic 'for' loop syntax (value_ini, loop_cond, loop_update)
+    for (int i = 0; i < 5; i++) {                               // Basic 'for' loop syntax (ini, test, update)
         std::cout << "\nThis is a for loop";                    // Condition everytime 'for' loop is true
     }
     std::cout << "\n\nThe counter has exceeded the value of i"; // For loop exit, goes to next line in the code
