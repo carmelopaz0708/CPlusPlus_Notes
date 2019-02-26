@@ -2,9 +2,12 @@
   structure.cpp
   Demonstrates how to create structures.
   
-  The structure is a compound data form for C++. Structures function like arrays wherein they are capable of storing multiple pieces of data in partitioned cells. Unlike arrays however, structures are not limited to one type of data. Structures can house multiple types of data, from primitive types to complex types. To call on a structure's contents, use the constructor (dot) operator.
+  The structure is a compound data form for C++. Structures function like arrays wherein they are capable of storing multiple pieces of 
+data in partitioned cells. Unlike arrays however, structures are not limited to one type of data. Structures can house multiple types of
+data, from primitive types to complex types. To call on a structure's contents, use the constructor (dot) operator.
 
-  The sample program uses a structure to obtain the details of each guest that have entered the fancy party. Then, we use a structure again to compute their total net worth.
+  The sample program uses a structure to obtain the details of each guest that have entered the fancy party. Then, we use a structure 
+again to compute their total net worth.
 */
 
 #include <iostream>
@@ -18,7 +21,8 @@ struct guestList {              // naming our structure guestlist.
 
 int main()
 {
-  // As of this writing, creating structures are implemented inside the main() function although experiments will be made if user made functions can call on structures
+  // As of this writing, creating structures are implemented inside the main() function although experiments will be made if user 
+  // made functions can call on structures
   
   // structure syntax
   guestList tony {
@@ -41,3 +45,4 @@ int main()
   
   std::cout << "The combined net worth of all the guest is " << tony.netWorth + vienna.netWorth + jones.netWorth;
 }
+
