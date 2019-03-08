@@ -1,10 +1,13 @@
 /*
-  hello.cpp
-  Every introduction starts with a hello.
+  HELLO WORLD!
+    Every programmer starts with the hello world program.
+
+ @author siege
+ @init 07/14/18
 */
 
-#include <iostream>                   // Header. Includes input and output capability for the code
+#include <iostream>                       // Includes binaries for input-output
 
-int main() {                                    // Program's main entry point. All C++ programs start in main()
-  std::cout << "Hello, world!" << std::endl;    // cout stands for compiler output. Output this string to the compiler. endl stands for end line
+int main() {                              // Main function. Program's initial entry point
+  std::cout << "Hello, world!\n";         // Syntax for printing 'Hello, World' to console. 'cout' stands for 'compiler output'
 }
