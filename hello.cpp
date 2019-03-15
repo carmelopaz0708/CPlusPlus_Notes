@@ -1,9 +1,9 @@
 /*
   HELLO WORLD!
-    Every programmer starts with the hello world program.
+  Every programmer starts with the hello world program.
 
- @author siege
- @init 07/14/18
+@author siege
+@init 07/14/18
 */
 
 #include <iostream>                       // Includes binaries for input-output
