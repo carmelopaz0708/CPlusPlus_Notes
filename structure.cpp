@@ -1,16 +1,15 @@
 /*
   STRUCTURES
+  A structure is a versatile data form capable of holding numerous sets of different data types. Like arrays, structures allocate same memory spaces to partition data within it.
+But unlike arrays, a structure can hold more than one data type. This means its capable of holding primitive data types (integers, floats, etc.) to compound data types (arrays,
+strings, structures, etc.).
+  To create a structure, we first define its blueprint (declared as a global variable). This blueprint indicates the syntax of how the structure should be called. At any time,
+any instance of that structure's name when called will follow the blueprint assigned to it. Data inside the structure can be called or manipulated using the constructor (dot
+operator).
+  The following is a program that uses a structure to keep tabs with rich guest and exploit their charitability.
 
-    A structure is a versatile data form capable of holding numerous sets of different data types. Like arrays, structures allocate same memory spaces to partition data within it.
-  But unlike arrays, a structure can hold more than one data type. This means its capable of holding primitive data types (integers, floats, etc.) to compound data types (arrays,
-  strings, structures, etc.).
-    To create a structure, we first define its blueprint (declared as a global variable). This blueprint indicates the syntax of how the structure should be called. At any time,
-  any instance of that structure's name when called will follow the blueprint assigned to it. Data inside the structure can be called or manipulated using the constructor (dot
-  operator).
-    The following is a program that uses a structure to keep tabs with rich guest and exploit their charitability.
-
- @auth siege
- @init 03/06/19
+@auth siege
+@init 03/06/19
 */
 
 #include <iostream>
