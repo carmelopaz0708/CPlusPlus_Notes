@@ -1,7 +1,7 @@
 /*
   ESCAPE CHARACTERS
-    Remember to use escape characters instead of the standard library. Escape characters are easier to type and debug. The following escape characters perform the specific
-  function listed below.
+  Remember to use escape characters instead of the standard library. Escape characters are easier to type and debug. The following escape characters perform the specific
+function listed below.
 
   \n - newline                    \t - horizontal tab                               \' - ignores next single quotation mark
   \r - carriage return            \v - vertical tab                                 \" - ignores the next double quotation mark
