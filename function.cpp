@@ -1,6 +1,6 @@
 /*
-	FUNCTION AND FUNCTION CALL
-		Functions are a very useful method of grouping complicated lines of code together. Suppose a program has several thousand lines of code, reading the program from top to
+  FUNCTION AND FUNCTION CALL
+    Functions are a very useful method of grouping complicated lines of code together. Suppose a program has several thousand lines of code, reading the program from top to
 	bottom would be difficult. Luckily for us, we can use a function to group together lines of codes that perform a specific function. This is to isolate code from one area to
 	another and prevent generating bugs which are difficult to trace. By partitioning code into functions, our program becomes easily readable by fellow programmers reading and
 	debugging your code. Functions also isolate variables from other parts of the code, allowing you to reuse variable names. A variable initialized inside a function will only
