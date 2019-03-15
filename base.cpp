@@ -1,8 +1,8 @@
 /*
   BASE NUMBER SYSTEM
   Using the standard library, C++ is capable of generating the four most common base-N notations. These are the decimal (base 10), binary (base 2), octal (base 8) and hexadecimal
- (base 16) notations. Built-in numeral converters are present in the standard library. The sample code below shows how to initialize special base-N numbers such as binary, octal
- and hexadecimal as well as to use the base-N number converters.
+(base 16) notations. Built-in numeral converters are present in the standard library. The sample code below shows how to initialize special base-N numbers such as binary, octal
+and hexadecimal as well as to use the base-N number converters.
 
 @auth siege
 @init 03/07/19
