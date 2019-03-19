@@ -15,6 +15,7 @@ maximum and minimum values and that no operation inside the program should excee
 
 void short_overflow_function(short);
 void int_overflow_function(int);
+void long_overflow_function(long);
 
 int main() {
   long long input_overflow_value;
@@ -24,6 +25,7 @@ int main() {
   // Input value will be typecasted to its respective function
   short_overflow_function(input_overflow_value);
   int_overflow_function(input_overflow_value);
+  long_overflow_function(input_overflow_value);
 }
 
 void short_overflow_function(short short_overflow_value) {
@@ -46,12 +48,27 @@ void int_overflow_function(int int_overflow_value) {
   std::cout << "\n---------------------------------------------\n";
   std::cout << "\t\tINT\n";
   std::cout << "---------------------------------------------\n";
-  std::cout << "Current minimum short value: " << INT_MIN << "\n";
-  std::cout << "Current maximum short value: " << INT_MAX << "\n";
+  std::cout << "Current minimum int value: " << INT_MIN << "\n";
+  std::cout << "Current maximum int value: " << INT_MAX << "\n";
   std::cout << "---------------------------------------------\n";
   exceed_min_value = INT_MIN - int_overflow_value;
   exceed_max_value = INT_MAX + int_overflow_value;
   std::cout << "Exceed minimum: "<< INT_MIN << " - " << int_overflow_value << " = " << exceed_min_value << "\n";
   std::cout << "Exceed maximum: "<< INT_MAX << " + " << int_overflow_value << " = " << exceed_max_value << "\n";
+  std::cout << "---------------------------------------------\n";
+}
+
+void long_overflow_function(long long_overflow_value) {
+  int exceed_max_value, exceed_min_value;
+  std::cout << "\n---------------------------------------------\n";
+  std::cout << "\t\tLONG\n";
+  std::cout << "---------------------------------------------\n";
+  std::cout << "Current minimum long value: " << LONG_MIN << "\n";
+  std::cout << "Current maximum long value: " << LONG_MAX << "\n";
+  std::cout << "---------------------------------------------\n";
+  exceed_min_value = LONG_MIN - long_overflow_value;
+  exceed_max_value = LONG_MAX + long_overflow_value;
+  std::cout << "Exceed minimum: "<< LONG_MIN << " - " << long_overflow_value << " = " << exceed_min_value << "\n";
+  std::cout << "Exceed maximum: "<< LONG_MAX << " + " << long_overflow_value << " = " << exceed_max_value << "\n";
   std::cout << "---------------------------------------------\n";
 }
