@@ -16,16 +16,18 @@ maximum and minimum values and that no operation inside the program should excee
 void short_overflow_function(short);
 void int_overflow_function(int);
 void long_overflow_function(long);
+void ushort_overflow_function(short);
 
 int main() {
   long long input_overflow_value;
-  std::cout << "Enter a value: ";
+  std::cout << "Enter a value: ____\b\b\b\b";
   std::cin >> input_overflow_value;
   
   // Input value will be typecasted to its respective function
-  short_overflow_function(input_overflow_value);
-  int_overflow_function(input_overflow_value);
-  long_overflow_function(input_overflow_value);
+  // short_overflow_function(input_overflow_value);
+  // int_overflow_function(input_overflow_value);
+  // long_overflow_function(input_overflow_value);
+  ushort_overflow_function(input_overflow_value);
 }
 
 void short_overflow_function(short short_overflow_value) {
@@ -33,9 +35,8 @@ void short_overflow_function(short short_overflow_value) {
   std::cout << "\n---------------------------------------------\n";
   std::cout << "\t\tSHORT\n";
   std::cout << "---------------------------------------------\n";
-  std::cout << "Current minimum short value: " << SHRT_MIN << "\n";
-  std::cout << "Current maximum short value: " << SHRT_MAX << "\n";
-  std::cout << "---------------------------------------------\n";
+  std::cout << "Minimum short value: " << SHRT_MIN << "\n";
+  std::cout << "Maximum short value: " << SHRT_MAX << "\n";
   exceed_min_value = SHRT_MIN - short_overflow_value;
   exceed_max_value = SHRT_MAX + short_overflow_value;
   std::cout << "Exceed minimum: "<< SHRT_MIN << " - " << short_overflow_value << " = " << exceed_min_value << "\n";
@@ -48,9 +49,8 @@ void int_overflow_function(int int_overflow_value) {
   std::cout << "\n---------------------------------------------\n";
   std::cout << "\t\tINT\n";
   std::cout << "---------------------------------------------\n";
-  std::cout << "Current minimum int value: " << INT_MIN << "\n";
-  std::cout << "Current maximum int value: " << INT_MAX << "\n";
-  std::cout << "---------------------------------------------\n";
+  std::cout << "Minimum int value: " << INT_MIN << "\n";
+  std::cout << "Maximum int value: " << INT_MAX << "\n";
   exceed_min_value = INT_MIN - int_overflow_value;
   exceed_max_value = INT_MAX + int_overflow_value;
   std::cout << "Exceed minimum: "<< INT_MIN << " - " << int_overflow_value << " = " << exceed_min_value << "\n";
@@ -59,16 +59,26 @@ void int_overflow_function(int int_overflow_value) {
 }
 
 void long_overflow_function(long long_overflow_value) {
-  int exceed_max_value, exceed_min_value;
+  long exceed_max_value, exceed_min_value;
   std::cout << "\n---------------------------------------------\n";
   std::cout << "\t\tLONG\n";
   std::cout << "---------------------------------------------\n";
-  std::cout << "Current minimum long value: " << LONG_MIN << "\n";
-  std::cout << "Current maximum long value: " << LONG_MAX << "\n";
-  std::cout << "---------------------------------------------\n";
+  std::cout << "Minimum long value: " << LONG_MIN << "\n";
+  std::cout << "Maximum long value: " << LONG_MAX << "\n";
   exceed_min_value = LONG_MIN - long_overflow_value;
   exceed_max_value = LONG_MAX + long_overflow_value;
   std::cout << "Exceed minimum: "<< LONG_MIN << " - " << long_overflow_value << " = " << exceed_min_value << "\n";
   std::cout << "Exceed maximum: "<< LONG_MAX << " + " << long_overflow_value << " = " << exceed_max_value << "\n";
+  std::cout << "---------------------------------------------\n";
+}
+
+void ushort_overflow_function(short ushort_overflow_value) {
+  unsigned short exceed_max_value;
+  std::cout << "\n---------------------------------------------\n";
+  std::cout << "\t\tUNSIGNED SHORT\n";
+  std::cout << "---------------------------------------------\n";
+  std::cout << "Maximum ushort value: " << USHRT_MAX << "\n";
+  exceed_max_value = USHRT_MAX + ushort_overflow_value;
+  std::cout << "Exceed maximum: "<< USHRT_MAX << " + " << ushort_overflow_value << " = " << exceed_max_value << "\n";
   std::cout << "---------------------------------------------\n";
 }
