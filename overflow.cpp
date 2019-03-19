@@ -18,9 +18,10 @@ void short_overflow_function(short);
 void int_overflow_function(int);
 void long_overflow_function(long);
 void ushort_overflow_function(short);
+void uint_overflow_function(int);
 
 int main() {
-  long long input_overflow_value;
+  int input_overflow_value;
   std::cout << "Enter a value: ____\b\b\b\b";
   std::cin >> input_overflow_value;
   
@@ -29,6 +30,7 @@ int main() {
   int_overflow_function(input_overflow_value);
   long_overflow_function(input_overflow_value);
   ushort_overflow_function(input_overflow_value);
+  uint_overflow_function(input_overflow_value);
 }
 
 void short_overflow_function(short short_overflow_value) {
@@ -85,5 +87,20 @@ void ushort_overflow_function(short ushort_overflow_value) {
   exceed_max_value = USHRT_MAX + ushort_overflow_value;
   std::cout << "Exceed zero: "<< ushrt_zero << " - " << ushort_overflow_value << " = " << exceed_zero << "\n";
   std::cout << "Exceed maximum: "<< USHRT_MAX << " + " << ushort_overflow_value << " = " << exceed_max_value << "\n";
+  std::cout << "---------------------------------------------\n";
+}
+
+void uint_overflow_function(int uint_overflow_value) {
+  unsigned int exceed_max_value, exceed_zero;
+  unsigned int uint_zero = 0;
+  std::cout << "\n---------------------------------------------\n";
+  std::cout << "\t\tUNSIGNED INT\n";
+  std::cout << "---------------------------------------------\n";
+  std::cout << "Minimum uint value: " << uint_zero << "\n";
+  std::cout << "Maximum uint value: " << UINT_MAX << "\n\n";
+  exceed_zero = uint_zero - uint_overflow_value;
+  exceed_max_value = UINT_MAX + uint_overflow_value;
+  std::cout << "Exceed zero: "<< uint_zero << " - " << uint_overflow_value << " = " << exceed_zero << "\n";
+  std::cout << "Exceed maximum: "<< UINT_MAX << " + " << uint_overflow_value << " = " << exceed_max_value << "\n";
   std::cout << "---------------------------------------------\n";
 }
