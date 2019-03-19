@@ -10,24 +10,26 @@
   @rev 03/20/19
 */
 
-void shortOverflow();
+void short_overflow_function(short);
 
 #include <iostream>
 #include <climits>
 
 int main() {
-  shortOverflow();
+  short input_overflow_value;
+  std::cout << "Enter a value: ";
+  std::cin >> input_overflow_value;
+  short_overflow_func(input_overflow_value);
 }
 
-void shortOverflow() {
+void short_overflow_func(short short_overflow_value) {
   short exceed_max_value, exceed_min_value;
-  short overflow_value = 1;
   std::cout << "---------------------------------------------\n";
-  std::cout << "Minimum short value: " << SHRT_MIN << "\n";
-  std::cout << "Maximum short value: " << SHRT_MAX << "\n";
+  std::cout << "Current minimum short value: " << SHRT_MIN << "\n";
+  std::cout << "Current maximum short value: " << SHRT_MAX << "\n";
   std::cout << "---------------------------------------------\n";
-  exceed_min_value = SHRT_MIN - overflow_value;
-  exceed_max_value = SHRT_MAX + overflow_value;
-  std::cout << "If min value exceeds by " << overflow_value << "\n";
-  std::cout << exceed_min_value;
+  exceed_min_value = SHRT_MIN - short_overflow_value;
+  exceed_max_value = SHRT_MAX + short_overflow_value;
+  std::cout << "SHRT_MIN - " << short_overflow_value << " = " << exceed_min_value << "\n";
+  std::cout << "SHRT_MAX + " << short_overflow_value << " = " << exceed_max_value << "\n";
 }
