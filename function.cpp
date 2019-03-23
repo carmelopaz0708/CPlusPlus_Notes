@@ -21,57 +21,55 @@ Function call means to allow the function to execute its lines of code. This can
 
 #include <iostream>
 
-double summer(double, double);
-double difference(double, double);
-double multiplier(double, double);
-double divider(double, double);
-void display(double, double, double, double);
+double adder_func(double, double);              // Function prototype. You can add names to the input argument but its not really neccesary
+double difference_func(double, double);         // The names will act as placeholders. They don't need to match the the function args
+double multiplier_func(double, double);
+double divider_func(double, double);
+void display_func(double, double, double, double);
 
 int main() {
-  double val1, val2, sum, dif, prod, quo;
+  double input_val1, input_val2, output_sum_func, output_dif_func, output_prod_func, output_quo_func;
   std::cout << "Enter val1: ";
-  std::cin >> val1;
+  std::cin >> input_val1;
   std::cout << "Enter val2: ";
-  std::cin >> val2;
-
-  sum = summer(val1, val2);
-  dif = difference(val1, val2);
-  prod = multiplier(val1, val2);
-  quo = divider(val1, val2);
-
-  display(sum, dif, prod, quo);
+  std::cin >> input_val2;
+  output_sum_func = adder_func(input_val1, input_val2);
+  output_dif_func = difference_func(input_val1, input_val2);
+  output_prod_func = multiplier_func(input_val1, input_val2);
+  output_quo_func = divider_func(input_val1, input_val2);
+  display_func(output_sum_func, output_dif_func, output_prod_func, output_quo_func);
 }
 
-double summer(double x, double y) {
-  double z;
-  z = x + y;
-  return z;
+double adder_func(double addend1, double addend2) {
+  double summer_result;
+  summer_result = addend1 + addend2;
+  return summer_result;
 }
 
-double difference(double x, double y) {
-  double z;
-  z = x - y;
-  return z;
+double difference_func(double minuend, double subtrahend) {
+  double difference_result;
+  difference_result = minuend - subtrahend;
+  return difference_result;
 }
 
-double multiplier(double x, double y) {
-  double z;
-  z = x * y;
-  return z;
+double multiplier_func(double multiplicand, double multiplier) {
+  double multiplier_result;
+  multiplier_result = multiplicand * multiplier;
+  return multiplier_result;
 }
 
-double divider(double x, double y) {
-  double z;
-  z = x / y;
-  return z;
+double divider_func(double dividend, double divisor) {
+  double divider_result;
+  divider_result = dividend / divisor;
+  return divider_result;
 }
 
-void display(double ans1, double ans2, double ans3, double ans4) {
+void display_func(double display_output_adder, double display_output_difference, double display_output_multiplier, double display_output_divider) {
   std::cout << "----------------------------------------------------------\n";
-  std::cout << "val1 + val2 = " << ans1 << "\n";
-  std::cout << "val1 - val2 = " << ans2 << "\n";
-  std::cout << "val1 * val2 = " << ans3 << "\n";
-  std::cout << "val1 / val2 = " << ans4 << "\n";
+  std::cout << "val1 + val2 = " << display_output_adder << "\n";
+  std::cout << "val1 - val2 = " << display_output_difference << "\n";
+  std::cout << "val1 * val2 = " << display_output_multiplier << "\n";
+  std::cout << "val1 / val2 = " << display_output_divider << "\n";
   std::cout << "                 END TRANSMISSION" << "\n";
   std::cout << "----------------------------------------------------------\n";
 }
