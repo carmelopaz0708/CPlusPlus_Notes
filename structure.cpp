@@ -7,15 +7,20 @@ strings, structures, etc.).
 any instance of that structure's name when called will follow the blueprint assigned to it. Data inside the structure can be called or manipulated using the constructor (dot
 operator).
   The following is a program that uses a structure to keep tabs with rich guest and exploit their charitability.
-
-@auth siege
-@init 03/06/19
+  
+  @auth siege
+  @init 03/06/19
 */
 
 #include <iostream>
 
 // Structure declaration, follow syntax. Note that string is part of the std library and requires std::
-struct richGuest {std::string name; double net; bool charit; double donate;};   //'struct structName {args}'
+struct richGuest {
+  std::string name; 
+  double net; 
+  bool charit; 
+  double donate;
+};   //'struct structName {args}'
 
 int main() {
   long double netWorthTot, donationsTot;
