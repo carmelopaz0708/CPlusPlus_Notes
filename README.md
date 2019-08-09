@@ -1,2 +1,2 @@
 # CPlusPlus_Notes
-A repository of where I keep my C++ notes. The code listed here are for reference purposes only.
+A repository I made specifically to keep my C++ Notes. Programs listed here are named by topic. Sometimes, each program will have several versions listed (e.g. pointer.cpp). This is to differentiate various subtopics of its parent program. To check out a specific topic, search the same name among the codes above. This is an ongoing solo project that has no set deadline. The codes listed here are purely for reference purposes only.
