@@ -16,6 +16,7 @@
 #include<vector>   
 
 void displayVector();
+void useVector();
 
 int main() {
   const int shrt_width = 3;
@@ -28,6 +29,7 @@ int main() {
   std::vector<int> numbers_set3 (long_width, val);   // Initializes a vector of ints with width 'set3_width' and having all elements set to 5
 
   displayVector();
+  useVector();
 }
 
 void displayVector() {
@@ -50,5 +52,22 @@ void displayVector() {
     std::cout << *i << " | ";                               // i points to the address of the initial element
   }
 
+  std::cout << std::endl;
+}
+
+void useVector() {
+  double input;
+  std::vector<double> ave_num;
+
+  std::cout << "\nExample 02:USING VECTORS\nEnter the values (type 'e' to end): ";
+  while((std::cin >> input) && (input != 'e')) {
+    ave_num.push_back(input);                               // On Linux, use CTRL+D to exit the stream. Separating values by a whitespace queues them to the stream
+  }
+
+  std::cout << "\nVector size: " << ave_num.size();
+  std::cout << "\nVector values: | ";
+  for(int i = 0; i < ave_num.size(); i++) {
+    std::cout << ave_num.at(i) << " | ";
+  }
   std::cout << std::endl;
 }
